@@ -14,3 +14,31 @@ see http://stackoverflow.com/questions/6871996/css-two-inline-block-width-50-ele
 
 
 /* Assign styles here */
+.wrapper {
+    display:inline-block;
+    width: 50%;
+    font-size: 2rem;
+    border: 2px solid white;
+    color: #dad9d9;
+}
+
+#photo-label, #small-img {
+    display: none;
+}
+
+#photo {
+    height: 400px
+    color: grey;
+}
+
+#photo > p {
+    font-size: 2rem;
+    font-color: white;
+    text-align: center;
+}
+
+@media screen and (min-width:992px) {
+    .wrapper {
+        width: 100%;
+    }
+}
